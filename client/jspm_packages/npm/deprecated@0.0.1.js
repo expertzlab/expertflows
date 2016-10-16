@@ -1,0 +1,1 @@
+module.exports = require("npm:deprecated@0.0.1/index.js");

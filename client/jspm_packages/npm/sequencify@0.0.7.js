@@ -1,0 +1,1 @@
+module.exports = require("npm:sequencify@0.0.7/index.js");

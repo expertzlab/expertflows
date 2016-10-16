@@ -28,5 +28,20 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "expertzflow"
+  "description": "expertzflow",
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.17",
+      "gulp": "npm:gulp@^3.9.1",
+      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }

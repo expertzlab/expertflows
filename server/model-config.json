@@ -34,5 +34,9 @@
   },
   "Note": {
     "dataSource": "db"
+  },
+  "Leads": {
+    "dataSource": "flowDS",
+    "public": true
   }
 }

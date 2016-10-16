@@ -1,0 +1,57 @@
+{
+  "name": "Leads",
+  "plural": "leads",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "clientName": {
+      "type": "string",
+      "required": true
+    },
+    "salesAgent": {
+      "type": "string"
+    },
+    "advance": {
+      "type": "number"
+    },
+    "addr1": {
+      "type": "string"
+    },
+    "add2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "pin": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "couses": {
+      "type": [
+        "string"
+      ]
+    },
+    "dateEnquiry": {
+      "type": "date"
+    },
+    "sessionDate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

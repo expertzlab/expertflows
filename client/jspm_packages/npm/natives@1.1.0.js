@@ -1,0 +1,1 @@
+module.exports = require("npm:natives@1.1.0/index.js");
