@@ -1,1 +1,0 @@
-module.exports = require("npm:glob-watcher@0.0.6/index.js");

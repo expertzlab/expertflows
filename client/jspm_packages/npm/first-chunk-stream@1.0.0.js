@@ -1,1 +1,0 @@
-module.exports = require("npm:first-chunk-stream@1.0.0/index");

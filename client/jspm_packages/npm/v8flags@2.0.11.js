@@ -1,1 +1,0 @@
-module.exports = require("npm:v8flags@2.0.11/index.js");

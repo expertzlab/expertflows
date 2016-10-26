@@ -1,1 +1,0 @@
-module.exports = require("npm:strip-bom@1.0.0/index");

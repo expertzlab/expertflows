@@ -1,1 +1,0 @@
-module.exports = require("npm:beeper@1.1.0/index");

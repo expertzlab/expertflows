@@ -1,1 +1,0 @@
-module.exports = require("npm:vinyl@0.4.6/index.js");

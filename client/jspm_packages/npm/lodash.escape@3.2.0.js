@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash.escape@3.2.0/index");

@@ -35,13 +35,19 @@
     },
     "dependencies": {
       "angular2": "npm:angular2@^2.0.0-beta.17",
+      "css": "github:systemjs/plugin-css@^0.1.32",
       "gulp": "npm:gulp@^3.9.1",
-      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha"
+      "reflect-metadata": "npm:reflect-metadata@^0.1.8",
+      "rxjs": "npm:rxjs@^5.0.0-rc.1",
+      "ts": "github:frankwallis/plugin-typescript@^5.2.7",
+      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha",
+      "typescript": "npm:typescript@^2.0.3",
+      "zone.js": "npm:zone.js@^0.6.26"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+      "core-js": "npm:core-js@^2.4.1"
     }
   }
 }

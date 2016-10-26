@@ -1,1 +1,0 @@
-module.exports = require("npm:time-stamp@1.0.1/index.js");

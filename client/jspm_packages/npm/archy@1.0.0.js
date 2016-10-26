@@ -1,1 +1,0 @@
-module.exports = require("npm:archy@1.0.0/index.js");
