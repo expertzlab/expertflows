@@ -1,0 +1,14 @@
+
+import {Component} from 'angular2/core';
+
+@Component({
+  selector: 'hello-world',
+  template: `<h1>Hello {{ name }}!</h1>`
+})
+export class FlowAppModule {
+  name: string;
+
+  constructor() {
+    this.name = 'Angular 2';
+  }
+}
