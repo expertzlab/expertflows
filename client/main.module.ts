@@ -3,6 +3,6 @@ import 'reflect-metadata';
 import 'es6-shim';
 
 import {bootstrap} from 'angular2/platform/browser';
-import {FlowAppModule} from 'module.component'
+import {FlowAppModuleComponent} from 'module.component'
 
-bootstrap(FlowAppModule);
+bootstrap(FlowAppModuleComponent);
