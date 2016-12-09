@@ -1,9 +1,10 @@
 
 import {Component} from 'angular2/core';
+
 import {FlowAppHomeComponent} from 'app/app.component'
 
 @Component({
-  selector: 'flow-module',
+  selector: 'flow-module-component',
   template: `<h1>Hello {{ name }}!</h1>
              <h2><flow-app-home>
              </flow-app-home></h2>
