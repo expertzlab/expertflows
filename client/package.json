@@ -1,7 +1,11 @@
 {
   "jspm": {
     "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-beta.21"
+      "angular2": "npm:angular2@^2.0.0-beta.21",
+      "es6-shim": "github:es-shims/es6-shim@^0.35.2",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.8",
+      "rxjs": "npm:rxjs@^5.0.0-rc.5",
+      "zone.js": "npm:zone.js@^0.7.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
