@@ -1,6 +1,5 @@
 import {Component, Injectable} from 'angular2/core';
-import {Http} from 'angular2/http';
-import {Response} from "angular2/response";
+import {Http, Headers, Response} from 'angular2/http';
 
 @Component({
   selector:'fa-register',
@@ -10,15 +9,17 @@ import {Response} from "angular2/response";
 @Injectable()
 export class RegisterComponent{
 
-
-
   constructor(public http: Http){
 
   }
 
   submit(){
     console.debug("test");
-    this.http.get('/api/Users/login').map(this.extractData).catch(this.handleError);
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    this.http.post('/api/Users',
+      {firstName:'Joe',lastName:'Smith'}, {headers:headers}) .map((res: Response) => res.json())
+      .subscribe((res:Response) => this.extractData(res));
   }
 
   private extractData(res:Response){
