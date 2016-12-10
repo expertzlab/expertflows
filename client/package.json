@@ -5,6 +5,7 @@
       "es6-shim": "github:es-shims/es6-shim@^0.35.2",
       "reflect-metadata": "npm:reflect-metadata@^0.1.8",
       "rxjs": "npm:rxjs@^5.0.0-rc.5",
+      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha",
       "zone.js": "npm:zone.js@^0.7.2"
     },
     "devDependencies": {

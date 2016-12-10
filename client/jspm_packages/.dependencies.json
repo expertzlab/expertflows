@@ -314,5 +314,9 @@
     "timers": "github:jspm/nodelibs-timers@^0.1.0",
     "crypto": "github:jspm/nodelibs-crypto@^0.1.0"
   },
-  "github:es-shims/es6-shim@0.35.2": {}
+  "github:es-shims/es6-shim@0.35.2": {},
+  "github:twbs/bootstrap@4.0.0-alpha": {
+    "jquery": "github:components/jquery"
+  },
+  "github:components/jquery@3.1.1": {}
 }
