@@ -5,9 +5,9 @@ import {FlowAppHomeComponent} from 'app/app.component'
 
 @Component({
   selector: 'flow-module-component',
-  template: `<h1>Hello {{ name }}!</h1>
-             <h2><flow-app-home>
-             </flow-app-home></h2>
+  template: `<h3>Hello {{ name }}!</h3>
+             <flow-app-home>
+             </flow-app-home>
             `,
   directives:[FlowAppHomeComponent]
 })
@@ -15,6 +15,6 @@ export class FlowAppModuleComponent {
   name: string;
 
   constructor() {
-    this.name = 'Angular 2';
+    this.name = 'User';
   }
 }

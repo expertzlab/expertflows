@@ -16,6 +16,10 @@ export class RegisterComponent{
   loading:boolean = true;
   private headers = new Headers({'Content-Type': 'application/json'});
 
+  username:string;
+  email:string;
+  password:string;
+
   constructor(@Inject (Http) private http: Http){
     //alert(http);
   }
@@ -23,16 +27,17 @@ export class RegisterComponent{
   submit(){
 
     var params = JSON.stringify({"realm": "admin",
-      "username": "admin",
-      "email": "a@a.com",
+      "username": this.username,
+      "email": this.username,
       "emailVerified": false,
-    "password":"a@a.com"});
+      "password":this.password});
 
     this.http.post('/api/Users',params,{headers:this.headers})
       .map((res: Response) => res.json())
       .subscribe(res => {
         this.data = res;
         this.loading = false;
+        this.extractData(res);
       });
     console.log('posted data');
   }

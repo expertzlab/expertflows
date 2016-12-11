@@ -8,8 +8,8 @@ import {RegisterComponent} from './register/register.component'
 
 @Component({
   selector: 'flow-app-home',
-  template: `<h3> Warm {{welcome}}</h3>
-              <h3><fa-register></fa-register></h3>
+  template: `<h5> Warm {{welcome}}</h5>
+              <fa-register></fa-register>
            `,
   directives:[RegisterComponent]
 

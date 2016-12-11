@@ -9,8 +9,8 @@ import {FlowAppHomeComponent} from 'app/app.component'
 
 @Component({
   selector: 'flow-module',
-  template: ` <h2><flow-module-component>
-             </flow-module-component></h2>
+  template: ` <flow-module-component>
+             </flow-module-component>
             `,
   directives:[FlowAppModuleComponent, FlowAppHomeComponent]
 })

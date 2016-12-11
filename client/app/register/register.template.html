@@ -1,18 +1,18 @@
 
 <section class="form-group">
-  <form action="/api/Users" method="post">
+  <form action="/api/Users" method="post" style="width:50%">
     <fieldset>
-      <legend>Login form</legend>
-      <div>
-        <label for="email">Email:</label>
-        <input type="text" name="email" value=""/>
+      <legend>Register</legend>
+      <div class="from-group">
+        <label for="username">User Name Email:</label>
+        <input class="form-control" type="text" name="email" value="" [(ngModel)]="username"/>
       </div>
-      <div>
+      <div class="form-group">
         <label for="password">Password:</label>
-        <input type="password" name="password" value=""/>
+        <input class="form-control" type="password" name="password" value="" [(ngModel)]="password"/>
       </div>
       <div>
-        <button (click)="submit()">Submit</button>
+        <button class="btn-primary" (click)="submit()">Submit</button>
       </div>
     </fieldset>
   </form>
