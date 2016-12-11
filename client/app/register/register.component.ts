@@ -1,25 +1,40 @@
-import {Component, Injectable} from 'angular2/core';
-import {Http, Headers, Response} from 'angular2/http';
+import {Component, Injectable, Inject} from 'angular2/core';
+import {HTTP_PROVIDERS, Http, Headers, Response} from 'angular2/http';
+
+import 'rxjs/add/operator/map';
 
 @Component({
   selector:'fa-register',
-  templateUrl:'/app/register/register.template.html'
+  templateUrl:'/app/register/register.template.html',
+  providers:[HTTP_PROVIDERS]
 })
 
 @Injectable()
 export class RegisterComponent{
 
-  constructor(public http: Http){
+  data:string;
+  loading:boolean = true;
+  private headers = new Headers({'Content-Type': 'application/json'});
 
+  constructor(@Inject (Http) private http: Http){
+    //alert(http);
   }
 
   submit(){
-    console.debug("test");
-    var headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    this.http.post('/api/Users',
-      {firstName:'Joe',lastName:'Smith'}, {headers:headers}) .map((res: Response) => res.json())
-      .subscribe((res:Response) => this.extractData(res));
+
+    var params = JSON.stringify({"realm": "admin",
+      "username": "admin",
+      "email": "a@a.com",
+      "emailVerified": false,
+    "password":"a@a.com"});
+
+    this.http.post('/api/Users',params,{headers:this.headers})
+      .map((res: Response) => res.json())
+      .subscribe(res => {
+        this.data = res;
+        this.loading = false;
+      });
+    console.log('posted data');
   }
 
   private extractData(res:Response){
