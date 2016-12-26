@@ -1,10 +1,9 @@
-import {Component, Injectable} from 'angular2/core';
-import {Http} from 'angular2/http';
-import {Response} from "angular2/response";
+import {Component, Injectable} from '@angular/core';
+import {Http, Response} from '@angular/http';
 
 @Component({
   selector:'fa-register',
-  templateUrl:'/app/login/login.template.html'
+  templateUrl:'/login.template.html'
 })
 
 @Injectable()
@@ -18,7 +17,7 @@ export class LoginComponent{
 
   submit(){
     console.debug("test");
-    this.http.get('/api/Users/login').map(this.extractData).catch(this.handleError);
+    this.http.get('/api/Users/login');
     console.debug("send request")
   }
 

@@ -1,5 +1,5 @@
-import {Component, Injectable, Inject} from 'angular2/core';
-import {HTTP_PROVIDERS, Http, Headers, Response} from 'angular2/http';
+import {Component, Injectable, Inject} from '@angular/core';
+import {HTTP_PROVIDERS, Http, Headers, Response} from '@angular/http';
 
 import 'rxjs/add/operator/map';
 
