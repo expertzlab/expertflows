@@ -20,3 +20,4 @@ npm-debug.log
 client/**/*.js
 client/**/*.js.map
 data/*
+client/dist
